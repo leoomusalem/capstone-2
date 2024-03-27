@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+}
+
+/***********************************************SECCION: HEADER*******************************************/
+
+.header{
+    background-color: #0A1D56;
+    color: #F0ECE5;
+    /*margin: 0%;
+    width: 100%;*/
+    padding: 50px;
+    /*box-sizing: border-box; (Todo lo que esta comentado de esta seccion se debe a que al usar grid ya no lo necesito, sin embargo no lo borro porque quizas me sirva en un futuro para ver como ajustar los margenes blancos en los casos que no use grid.*/
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.hero img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.galaxia{
+    height: 60px;
+    width: 60px;
+    grid-column-start: 2;
+}
+
+h1{
+    font-family: Asset, Serif;
+    letter-spacing: 2px;
+    width: 500px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+h2{
+    font-family:montserrat, sans-serif;
+    letter-spacing: 1px;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.astronauta{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    float: right;
+    grid-column-start: 4;
+    grid-row-start: -1;
+}
+
+/**********************************************SECCION:HERO*******************************************/
+
+.hero{
+    text-align: center;
+    padding: 25px;
+}
+
+p{
+    font-family: montserrat, sans-serif;
+    padding: 25px 100px;
+    letter-spacing: 1px;
+}
+
+/********************************************SECCION: FOOTER******************************************/
+
+.footer{
+    background-color: #0A1D56;
+    color: #F0ECE5;
+    padding: 50px;
+    text-align: center;
+}
+
+@media (max-width:710px){
+    .header{
+        display: block;
+        width: 100%;
+        padding: 8% 0% 8% 0%;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        width: 70%;
+        margin: 0 15% 0 15%;
+    }
+}
